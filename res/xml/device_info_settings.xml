@@ -27,8 +27,8 @@
         <!-- desiOS version -->
         <Preference android:key="dosp_version"
                 style="?android:preferenceInformationStyle"
-                android:title="@string/viper_version_title"
-                android:summary="@string/viper_version_default"/>
+                android:title="@string/dosp_version_title"
+                android:summary="@string/dosp_version_default"/>
 
         <!-- System update settings - launches activity
         <PreferenceScreen android:key="system_update_settings"
