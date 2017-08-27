@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2016 The Android Open Source Project
-     Copyright (C) 2017 ViperOs Project
-
+     Copyright (C) 2017 DOSP Project
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -23,9 +22,9 @@
     <string name="magisk_title">Magisk Manager</string>
     <string name="magisk_summary">Root management</string>
 
-    <!-- About phone screen, ViperOs version -->
-    <string name="viper_version_title">ViperOS</string>
-    <string name="viper_version_default">Unknown</string>
+    <!-- About phone screen, DOSP version -->
+    <string name="dosp_version_title">DesiOS</string>
+    <string name="dosp_version_default">Unknown</string>
 	
     <!-- About phone screen, processor info label [CHAR LIMIT=40] --> 
     <string name="processor_info">Processor</string>
