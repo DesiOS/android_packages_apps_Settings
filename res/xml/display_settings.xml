@@ -103,7 +103,7 @@
                 android:key="doze_fragment"
                 android:title="@string/doze_settings"
                 android:summary="@string/doze_settings_summary"
-                android:fragment="com.android.settings.viper.AmbientSettings" />
+                android:fragment="com.android.settings.dosp.AmbientSettings" />
 
         <cyanogenmod.preference.CMGlobalSettingSwitchPreference
                 android:key="wake_when_plugged_or_unplugged"
