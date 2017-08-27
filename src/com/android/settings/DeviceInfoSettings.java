@@ -84,11 +84,11 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String PROPERTY_QGP_VERSION = "persist.qgp.version";
     private static final String MBN_VERSION_PATH = "/persist/speccfg/mbnversion";
     private static final String QGP_VERSION_PATH = "/persist/speccfg/qgpversion";
-    private static final String KEY_VIPER_VERSION = "viper_version";
+    private static final String KEY_DOSP_VERSION = "dosp_version";
     private static final String KEY_MOD_BUILD_DATE = "build_date";
 
-    private static final String KEY_VIPEROTA = "viper_ota";
-    private static final String KEY_VIPEROTA_PACKAGE_NAME = "com.viper.ota";
+    private static final String KEY_DOSPOTA = "dosp_ota";
+    private static final String KEY_VIPEROTA_PACKAGE_NAME = "com.dosp.ota";
 
     private PreferenceScreen mViperOTA;
 
@@ -156,7 +156,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         if(mMbnVersion == null){
             getPreferenceScreen().removePreference(findPreference(KEY_MBN_VERSION));
         }
-        setValueSummary(KEY_VIPER_VERSION, "ro.viper.version");
+        setValueSummary(KEY_VIPER_VERSION, "ro.dosp.version");
         findPreference(KEY_VIPER_VERSION).setEnabled(true);
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
 
@@ -221,7 +221,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 "safety_info", "android.settings.SHOW_SAFETY_AND_REGULATORY_INFO");
 
         mViperOTA = (PreferenceScreen) findPreference(KEY_VIPEROTA);
-        String buildtype = SystemProperties.get("ro.viper.buildtype","unofficial");
+        String buildtype = SystemProperties.get("ro.dosp.buildtype","unofficial");
         if (!buildtype.equalsIgnoreCase("official") || !PackageUtils.isAppInstalled(getActivity(), KEY_VIPEROTA_PACKAGE_NAME)) {
             getPreferenceScreen().removePreference(mViperOTA);
         }
