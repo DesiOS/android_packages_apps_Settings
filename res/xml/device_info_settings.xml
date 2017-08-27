@@ -20,9 +20,9 @@
         android:title="@string/about_settings">
 
         <!-- ViperOS Banner -->
-        <PreferenceScreen android:key="viper_logo"
+        <PreferenceScreen android:key="dosp_logo"
                           android:enabled="false"
-                          android:layout="@layout/viper_logo_row" />
+                          android:layout="@layout/dosp_logo_row" />
 
         <!-- desiOS version -->
         <Preference android:key="dosp_version"
